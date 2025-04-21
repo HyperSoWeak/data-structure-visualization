@@ -15,7 +15,7 @@ export default function HomePage() {
 
       <section className="grid gap-6 max-w-6xl mx-auto justify-center">
         {dataStructures.map((ds, i) => (
-          <Link key={ds.name} href={ds.href}>
+          <Link key={i} href={ds.href}>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

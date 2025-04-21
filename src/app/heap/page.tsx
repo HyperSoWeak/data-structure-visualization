@@ -42,7 +42,7 @@ export default function HeapPage() {
   const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
   const runSteps = async (steps: Step[]) => {
-    let currentHeap = [...heap];
+    const currentHeap = [...heap];
     console.log("Heap before steps:", currentHeap);
     setIsAnimating(true);
 
